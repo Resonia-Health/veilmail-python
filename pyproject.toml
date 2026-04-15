@@ -5,24 +5,51 @@ build-backend = "hatchling.build"
 [project]
 name = "veilmail"
 version = "0.1.0"
-description = "Official Python SDK for Veil Mail — secure email with built-in PII protection"
+description = "Official Python SDK for Veil Mail — secure transactional and marketing email with automatic PII protection. A drop-in alternative to Resend, SendGrid, Mailgun, and Postmark."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.9"
 authors = [
     { name = "Resonia Health", email = "support@veilmail.xyz" },
 ]
-keywords = ["email", "veilmail", "sdk", "transactional-email"]
+keywords = [
+    "email",
+    "email-api",
+    "veilmail",
+    "veil-mail",
+    "sdk",
+    "transactional-email",
+    "marketing-email",
+    "smtp",
+    "resend",
+    "resend-alternative",
+    "sendgrid",
+    "sendgrid-alternative",
+    "mailgun",
+    "mailgun-alternative",
+    "postmark",
+    "postmark-alternative",
+    "pii",
+    "pii-protection",
+    "casl",
+    "gdpr",
+    "compliance",
+]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
     "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Topic :: Communications :: Email",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
     "Typing :: Typed",
 ]
 dependencies = [
@@ -40,8 +67,11 @@ dev = [
 
 [project.urls]
 Homepage = "https://veilmail.xyz"
-Documentation = "https://veilmail.xyz/docs/sdk"
+Documentation = "https://veilmail.xyz/docs/sdk-python"
 Repository = "https://github.com/Resonia-Health/veilmail-python"
+Issues = "https://github.com/Resonia-Health/veilmail-python/issues"
+"Migrate from Resend" = "https://veilmail.xyz/docs/guides/migrate-resend"
+"Migrate from SendGrid" = "https://veilmail.xyz/docs/guides/migrate-sendgrid"
 
 [tool.ruff]
 target-version = "py39"
